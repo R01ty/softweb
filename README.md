@@ -29,523 +29,767 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```c
+soft.html
 
-index.html
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeCraft</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Courier New', Courier, monospace;
+                        }
+            .banner {
+                width: 100%;
+                height: 100vh ;
+                background-size: cover;
+                background-position: center;
 
-<!DOCTYPE html>
-<html >
-<head>
-  <!-- Site made with Mobirise Online Website Builder v5.9.13, https://a.mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.13, a.mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/photo-1485230405346-71acb9518d9c.jpeg" type="image/x-icon">
-  <meta name="description" content="Experience seamless and secure login with Google. Connect with your favorite apps and services effortlessly.">
-  <title>Secure Google Login</title>
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1714203837000">
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/bootstrap/css/bootstrap.min.css?rnd=1714203837000">
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1714203837000">
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1714203837000">
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/parallax/jarallax.css?rnd=1714203837000">
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/dropdown/css/style.css?rnd=1714203837000">
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/socicon/css/styles.css?rnd=1714203837000">
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/theme/css/style.css?rnd=1714203837000">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&display=swap"></noscript>
-  <link rel="stylesheet" href="https://r.mobirisesite.com/410578/assets/css/mbr-additional.css?rnd=1714203837000" type="text/css">
-  
-  
-  
-  
-</head>
-<body>
-  
-  <section data-bs-version="5.1" class="menu menu2 cid-ub84rzwbvD" once="menu" id="menu-5-ub84rzwbvD">
-	
-
-	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-		<div class="container">
-			<div class="navbar-brand">
-				<span class="navbar-logo">
-					<a href="https://mobiri.se">
-						<img src="assets/images/photo-1485230405346-71acb9518d9c.jpeg" alt="Mobirise Website Builder" style="height: 4.3rem;">
-					</a>
-				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobiri.se">G-Login</a></span>
-			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="https://mobiri.se">Sign-In</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="https://mobiri.se" aria-expanded="false">Security</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="https://mobiri.se">Privacy</a>
-					</li>
-				</ul>
-				
-				<div class="navbar-buttons mbr-section-btn">
-					<a class="btn btn-primary display-4" href="https://mobiri.se">Get Started</a>
-				</div>
-			</div>
-		</div>
-	</nav>
-</section>
-
-<section data-bs-version="5.1" class="header16 cid-ub84rzySpA mbr-fullscreen mbr-parallax-background" id="hero-17-ub84rzySpA">
-  
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="content-wrap col-12 col-md-12">
-        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-          <strong>Unlock Access</strong>
-        </h1>
-        
-        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Join the Cyber Adventure - Securely Access Your World with G-Login</p>
-        <div class="mbr-section-btn">
-          <a class="btn btn-white-outline display-7" href="https://mobiri.se">Explore Now</a>
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                color:rgb(228, 71, 204);
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: white;
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color:black;
+                border-radius: 10px;
+                background:rgb(13, 126, 232);
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color:rgb(25, 137, 216);
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+            .text h2 {
+                color: white;
+                font-weight: 800;
+                font-size: 50px;
+                letter-spacing: 3px;
+            }
+            .text p {
+                color: white;
+                text-transform: capitalize;
+                font-size: 15px;
+                margin-bottom: 30px;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+            }
+            .login {
+                margin: 0px 10px;
+                border: 2px solid rgb(246, 41, 184);
+                padding: 13px 35px;
+                letter-spacing: 1px;
+                color:black;
+                border-radius: 30px;
+                background-color: rgb(219, 92, 183);
+                text-decoration: none;
+            }
+            .login:hover {
+                border: 2px solid rgb(220,101, 224);
+                color: rgb(230, 84, 243);
+                background-color: white;
+                transition: 0.5s;
+                cursor: pointer;
+            } 
+            .signup {
+                margin: 0px 10px;
+                border: 2px solid rgb(220, 101, 224);
+                padding: 13px 35px;
+                letter-spacing: 1px;
+                color:black;
+                border-radius: 30px;
+                background-color:  rgb(220, 101, 224);
+                text-decoration: none;
+            }
+            .signup:hover {
+                border: 2px solid gold;
+                color: rgb(220, 101, 224);
+                background-color: white;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+            footer {
+                background-color: rgb(250, 89, 242);
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body background="gr.avif">
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">A<span>P</span>E<span>X</span></h1>
+            <ul>
+                <li><a href="homepage.html"> Home </a></li>
+                <li><a href="Products.html"> Products </a></li>
+                <li><a href="person.html"> People </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="article8 cid-ub84rzzF2L" id="about-me-8-ub84rzzF2L">
-  
-
-  
-  
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="card col-md-12 col-lg-10">
-        <div class="card-wrapper">
-          <div class="image-wrapper d-flex justify-content-center mb-4">
-            <img src="assets/images/photo-1462899006636-339e08d1844e.jpeg" alt="Mobirise Website Builder">
-          </div>
-          <div class="card-content-text">
-            <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
-            <strong>Who We Are</strong>
-          </h3>
-          <div class="row card-box align-left">
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">Welcome to the gateway of digital exploration, where security meets convenience.</p>
-              </div>
-            </div>
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">At G-Login, we believe in making your online experience seamless and safe.</p>
-              </div>
-            </div>
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">Join us on this thrilling journey towards a secure cyber future.</p>
-              </div>
-            </div>
-            
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="features10 cid-ub84rzz807" id="metrics-2-ub84rzz807">
-  
-
-  
-  
-  <div class="container">
-    
-    <div class="row justify-content-center">
-      <div class="item features-without-image col-12 col-md-6 col-lg-4">
-        <div class="item-wrapper">
-          <div class="card-box align-left">
-            
-            <p class="card-title mbr-fonts-style mb-3 display-1">
-              <strong>1 Billion+</strong>
-            </p>
-            <p class="card-text mbr-fonts-style mb-3 display-7">Users Protected</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="item features-without-image col-12 col-md-6 col-lg-4">
-        <div class="item-wrapper">
-          <div class="card-box align-left">
-            
-            <p class="card-title mbr-fonts-style mb-3 display-1">
-              <strong>99.9%</strong>
-            </p>
-            <p class="card-text mbr-fonts-style mb-3 display-7">Security Success Rate</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="item features-without-image col-12 col-md-6 col-lg-4">
-        <div class="item-wrapper">
-          <div class="card-box align-left">
-            
-            <p class="card-title mbr-fonts-style mb-3 display-1">
-              <strong>24/7</strong>
-            </p>
-            <p class="card-text mbr-fonts-style mb-3 display-7">Support Available</p>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="gallery07 cid-ub84rzzjW0" id="gallery-14-ub84rzzjW0">
-  
-  
-  <div class="container-fluid gallery-wrapper">
-    <div class="row justify-content-center">
-      <div class="col-12 content-head">
-        
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
-        <div class="grid-item">
-          <img src="assets/images/photo-1555949963-ff9fe0c870eb.jpeg" alt="Mobirise Website Builder">
-        </div>
-        <div class="grid-item">
-          <img src="assets/images/photo-1634979149798-e9a118734e93.jpeg" alt="Mobirise Website Builder">
-        </div>
-        <div class="grid-item">
-          <img src="assets/images/photo-1495714096525-285e85481946.jpeg" alt="Mobirise Website Builder">
-        </div>
-        <div class="grid-item">
-          <img src="assets/images/photo-1548092372-0d1bd40894a3.jpeg" alt="Mobirise Website Builder">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="header09 cid-ub84rzzgOz" id="call-to-action-7-ub84rzzgOz">
-    
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8">
-                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1">
-                    <strong>Unlock Your Digital World with Google</strong>
-                </h1>
-                <p class="mbr-fonts-style mbr-text mb-4 display-7">Experience the Power of Google Login for Seamless Access to Your Favorite Apps</p>
-                <div class="mbr-section-btn">
-                    <a class="btn btn-primary display-7" href="https://mobiri.se">Sign In Now</a> 
-                    <a class="btn btn-secondary display-7" href="https://mobiri.se">Learn More</a>
+        <div class="content">
+            <div class="text">
+                <h2>Apex Software Forge</h2>
+                <br>
+                <p> Apex Software Forge: Crafting innovative solutions to power businesses into the future.</p>
+                <br>
+                <div>
+                    <a href="#" class="login"> Log In </a>
+                    <a href="#" class="signup"> Sign Up </a>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
-</section>
-
-<section data-bs-version="5.1" class="features03 cid-ub84rzzxOg" id="events-1-ub84rzzxOg">
-  
-  
-  <div class="container-fluid">
-    <div class="row justify-content-center mb-5">
-      <div class="col-12 content-head">
-        <div class="mbr-section-head">
-          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-            <strong>Exciting Events</strong>
-          </h4>
-          
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="item features-image col-12 col-md-6 col-lg-3 active">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="assets/images/photo-1618371731836-2b9bff9ac72a.jpeg" alt="Mobirise Website Builder" title="">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
-              <strong>Tech Talk Extravaganza</strong>
-            </h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 3, 2024</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">Join the Hottest Tech Gurus for a Mind-Blowing Discussion on Innovation and Future Trends</p>
-            <div class="mbr-section-btn item-footer">
-              <a href="" class="btn item-btn btn-primary display-7">Join</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item features-image col-12 col-md-6 col-lg-3">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="assets/images/photo-1528312635006-8ea0bc49ec63.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="1" data-bs-slide-to="1">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-              <strong>Digital Revolution Summit</strong>
-            </h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 10, 2024</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">Be Part of the Revolution! Explore Cutting-Edge Technologies and Network with Industry Leaders</p>
-            <div class="mbr-section-btn item-footer">
-              <a href="" class="btn item-btn btn-primary display-7">Join</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item features-image col-12 col-md-6 col-lg-3">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="assets/images/photo-1557597774-9d273605dfa9.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="2">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-              <strong>Innovation Showcase</strong>
-            </h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 17, 2024</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">Witness the Unveiling of Tomorrow's Tech Marvels. Don't Miss Out on the Future!</p>
-            <div class="mbr-section-btn item-footer">
-              <a href="" class="btn item-btn btn-primary display-7">Join</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item features-image col-12 col-md-6 col-lg-3">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="assets/images/photo-1563920443079-783e5c786b83.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="2">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-              <strong>Tech Titans Panel</strong>
-            </h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 24, 2024</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">Get Insights from Tech Titans. Discover Secrets to Success in the Digital Age!</p>
-            <div class="mbr-section-btn item-footer">
-              <a href="" class="btn item-btn btn-primary display-7">Join</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="features5 cid-ub84rzAUJ6" id="features-22-ub84rzAUJ6">
-    
-
-    
-    
-    <div class="container">
-        <div class="row mb-5 justify-content-center">
-            <div class="col-12 content-head">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                    <strong>Key Features of Google Login</strong>
-                </h3>
-                
-            </div>
-        </div>
-        <div class="row">
-            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="card-box align-left">
-                        
-                        <h5 class="card-title mbr-fonts-style display-5">
-                            <strong>Seamless Access</strong>
-                        </h5>
-                        <p class="card-text mbr-fonts-style display-7">Instantly Connect to Your Favorite Apps with One Click</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="card-box align-left">
-                        
-                        <h5 class="card-title mbr-fonts-style display-5">
-                            <strong>Enhanced Security</strong>
-                        </h5>
-                        <p class="card-text mbr-fonts-style display-7">Protect Your Data with Google's Advanced Security Measures</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="card-box align-left">
-                        
-                        <h5 class="card-title mbr-fonts-style display-5">
-                            <strong>Personalized Experience</strong>
-                        </h5>
-                        <p class="card-text mbr-fonts-style display-7">Customize Your Settings for a Tailored Digital Journey</p>
-                        
-                    </div>
-                </div>
-            </div>            
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="article05 cid-ub84rzAazB" id="generic-text-5-ub84rzAazB">
-  
-
-    
-
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 content-head">
-                <div class="mbr-section-head mb-5">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                        <strong>Get in Touch</strong>
-                    </h3>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-12 col-lg-6">
-                <div class="card-wrapper">
-                    <div class="text-wrapper">
-                        
-                        <ul class="list mbr-fonts-style display-7">
-                            <li class="mbr-text item-wrap">
-                            Phone:                                
-                            <a href="tel:1-800-GOOGLE" class="text-black">1-800-GOOGLE</a></li>
-
-                            <li class="mbr-text item-wrap">WhatsApp: 
-                            <a href="tel:1-800-GOOGLE" class="text-black">1-800-GOOGLE</a></li> 
-
-                            <li class="mbr-text item-wrap">                            
-                            Email:
-                            <a href="mailto:party@google.com" class="text-black">party@google.com</a>                        
-                            </li>
-
-                            <li class="mbr-text item-wrap">                        
-                            Address:
-                            1600 Amphitheatre Parkway, Mountain View, CA
-                            </li>
-
-                            <li class="mbr-text item-wrap">
-                            Opening Hours:
-                            24/7, because Google never sleeps!
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="map-wrapper col-md-12 col-lg-6">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="footer3 cid-ub84rzCNEn" once="footers" id="footer-3-ub84rzCNEn">
-
-        
-
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="row-links">
-                <ul class="header-menu">
-                  
-                  
-                  
-                  
-                <li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="#" class="text-white">Home</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="#" class="text-white">About</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="#" class="text-white">Partners</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="#" class="text-white">Contact</a>
-                  </li></ul>
-              </div>
-
-            <div class="col-12 mt-4">
-                <div class="social-row">
-                    <div class="soc-item">
-                        <a href="https://mobiri.se/" target="_blank">
-                            <span class="mbr-iconfont socicon socicon-facebook display-7"></span>
-                        </a>
-                    </div>
-                    <div class="soc-item">
-                        <a href="https://mobiri.se/" target="_blank">
-                            <span class="mbr-iconfont socicon-twitter socicon"></span>
-                        </a>
-                    </div>
-                    <div class="soc-item">
-                        <a href="https://mobiri.se/" target="_blank">
-                            <span class="mbr-iconfont socicon-instagram socicon"></span>
-                        </a>
-                    </div>
-                    <div class="soc-item">
-                        <a href="https://mobiri.se/" target="_blank">
-                            <span class="mbr-iconfont socicon socicon-linkedin"></span>
-                        </a>
-                    </div>
-                    <div class="soc-item">
-                        <a href="https://mobiri.se/" target="_blank">
-                            <span class="mbr-iconfont socicon socicon-twitch"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mt-5">
-                <p class="mbr-fonts-style copyright display-7">© 2024 Google. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/parallax/jarallax.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/ytplayer/index.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/scrollgallery/scroll-gallery.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
-  
-  
-  
+    <footer>
+        <center> Developed by RAGUL E </center>
+    </footer>
 </body>
 </html>
 
+ person.html
+
+ <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APEX</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Courier New', Courier, monospace;
+                        }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                color:gold;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: white;
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color:black;
+                border-radius: 10px;
+                background:gold;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color:gold;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .image {
+                position: relative;
+                border: 0;
+                top: 70px;
+                background: transparent;
+            }
+            .image table {
+                border: 0;
+                color: white;
+                position: relative;
+                left: 150px;
+            }
+            .image table img {
+                height: 140px;
+                width: 140px;
+                border: 2px solid white;
+                padding: 5px;
+                border-radius: 50%;
+            }
+            .image table td {
+                color: gold;
+            }
+            footer {
+                background-color: gold;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body background="gr.avif">
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">C<span>ode</span>V<span>erse</span></h1>
+            <ul>
+                <li><a href="homepage.html"> Home </a></li>
+                <li><a href="Products.html"> Products </a></li>
+                <li><a href="person.html"> People </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="image">
+            <table cellspacing="20"> 
+                <tr align="center">
+                    <td> <img src="my.png"> </td>
+                    <td> <img src="jennie.jpg"> </td>
+                    <td> <img src="shawn.jpg"> </td>
+                    <td> <img src="ariana.jpg"> </td>
+                    <td> <img src="emma.avif"> </td>
+                    <td> <img src="justin.jpg"> </td>
+                </tr>
+                <tr align="center">
+                    <th> Ayisha rinsi k </th>
+                    <th> jennie </th>
+                    <th> shawn mendes</th>
+                    <th> Ariana grande </th>
+                    <th> Emma Watson</th>
+                    <th> Justin biber </th>
+                </tr>
+                <tr align="center">
+                    <td> CEO </td>
+                    <td> CEO, Co-Founder </td>
+                    <td> CTO, Co-Founder </td>
+                    <td> Director </td>
+                    <td> Asst. Director </td>
+                    <td> Dy. Director </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <center> Developed by RAGUL E </center>
+    </footer>
+</body>
+</html>
+
+product.html
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APEX</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Courier New', Courier, monospace;
+                        }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 100%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                color:gold;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: white;
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color:black;
+                border-radius: 10px;
+                background:gold;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color:gold;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .container {
+                background: transparent;
+                padding: 10px 5%;
+                padding-bottom: 100px;
+            }
+            .container .box-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 20px;
+            }
+            .container .box-container .box {
+                color: white;
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+                border-radius: 10px;
+                background: transparent;
+                border: 1px solid white;
+                padding: 10px 5px;
+            }
+            .container .box-container .box img {
+                height: 50px;
+                border-radius: 20px;
+            }
+            .container .box-container .box h3 {
+                color: gold;
+                font-size: large;
+                padding: 10px 0;
+            }
+            .container .box-container .box p {
+                color: white;
+                font-size: small;
+                line-height: 1.5;
+            }
+            footer {
+                background-color: gold;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body background="gr.avif">
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">A<span>P</span>E<span>X</span></h1>
+            <ul>
+                <li><a href="homepage.html"> Home </a></li>
+                <li><a href="Products.html"> Products </a></li>
+                <li><a href="person.html"> People </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <img src="tmp3.jpg" alt="">
+                    <h3>Python</h3>
+                    <p>The versatile and user-friendly programming language empowering developers worldwide.</p>
+                </div>
+                <div class="box">
+                    <img src="temp8.png" alt="">
+                    <h3>Css </h3>
+                    <p> Crafting beautiful and responsive web designs with ease.</p>
+                </div>
+                <div class="box">
+                    <img src="temp1.jpg" alt="">
+                    <h3>APEX solution</h3>
+                    <p>Elevating businesses with powerful and scalable software solutions</p>
+                </div>
+                <div class="box">
+                    <img src="temp4.jpg" alt="">
+                    <h3>html</h3>
+                    <p>Brewing cross-platform magic with the steaming cup of robust and versatile programming.</p>
+                </div>
+                <div class="box">
+                    <img src="temp6.jpg" alt="">
+                    <h3>Coding</h3>
+                    <p>Unleashing creativity and problem-solving through lines of code</p>
+                </div>
+                <div class="box">
+                    <img src="temp7.jpg" alt="">
+                    <h3>WEB DESIGN </h3>
+                    <p>Transforming ideas into stunning and user-friendly digital experiences</p>
+                </div>
+                <div class="box">
+                    <img src="tempt5.avif" alt="">
+                    <h3>Coding</h3>
+                    <p>designed to be displayed in a web browser. It defines the content and structure of web content. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center> Developed by RAGUL E </center>
+    </footer>
+</body>
+</html>
+
+contact.html
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APEX</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Courier New', Courier, monospace;
+                        }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                color:gold;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: white;
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color:black;
+                border-radius: 10px;
+                background:gold;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color:gold;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .box {
+                display: flex;
+                column-gap: 40px;
+                background: transparent;
+                position: relative;
+                top: 50px;
+            }
+            .box-1 {
+                height: 400px;
+                width: 400px;
+                border: 3px solid white;
+                border-radius: 20px;
+                background: transparent;
+                position: relative;
+                left: 250px;
+            }
+            .box-2 {
+                height: 400px;
+                width: 400px;
+                border: 3px solid gold;
+                border-radius: 20px;
+                background: transparent;
+                position: relative;
+                left: 300px;
+            }
+            .box-1 form {
+                display: flex;
+                color: white;
+                background: transparent;
+                padding: 10px;
+                font-size: 15px;
+                position: relative;
+                top: 15px;
+            }
+            .box-1 form input {
+                background: transparent;
+                display: flex;
+                border: 1px solid white;
+                border-radius: 10px;
+                padding: 15px 30px;
+                font-size: 15px;
+                color: white;
+                position: relative;
+                top: 30px;
+            }
+            .box-1 form textarea {
+                background: transparent;
+                color: white;
+                padding: 15px 10px;
+                position: relative;
+                top: 30px;
+                left: 30px;
+                border: 1px solid white;
+                border-radius: 10px;
+            }
+            .box-1 form button {
+                border: 0;
+                outline: none;
+                padding: 10px 20px;
+                color: white;
+                border-radius: 30px;
+                background: gold;
+                cursor: pointer;
+                position: relative;
+                top: 50px;
+            }
+            .box-2 h2 {
+                color: white;
+                position: relative;
+                top: 25px;
+                left: 50px;
+                font-size: 30px;
+            }
+            .box-2 p {
+                color: white;
+                position: relative;
+                top: 50px;
+                padding: 10px 80px;
+            }
+            .box-2 span {
+                color: gold;
+                font-size: 20px;
+            }
+            footer {
+                background-color: gold;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body background="gr.avif">
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">A<span>P</span>E<span>X</span></h1>
+            <ul>
+                <li><a href="homepage.html"> Home </a></li>
+                <li><a href="Products.html"> Products </a></li>
+                <li><a href="person.html"> People </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="box">
+            <div class="box-1">
+                <form>
+                    <center>
+                        <h1> Contact Us </h1>
+                        <input type="text" placeholder="Your Name">
+                        <br>
+                        <input type="email" placeholder="Your Email">
+                        <br>
+                        <textarea rows="4" cols="30" placeholder="Your Message"> </textarea>
+                        <br>
+                        <button type="submit"> Submit </button>
+                    </center>
+                </form>
+            </div>
+            <div class="box-2"> 
+                <h2> Contact Information </h2>
+                <p> <span>Address</span> : 123 Main Street Tech Valley, CA 98765 </p>
+                <p> <span>Email</span> : apex25@gmail.com.com </p>
+                <p> <span>Phone</span> : 054 975368675 </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center> Developed by RAGUL E</center>
+    </footer>
+</body>
+</html>
 
 
 ```
 
 ## OUTPUT:
-
-![alt text](<Screenshot 2024-04-27 132035.png>)
-![alt text](<Screenshot 2024-04-27 132054.png>)
-![alt text](<Screenshot 2024-04-27 132116.png>)
-![alt text](<Screenshot 2024-04-27 132134.png>)
+![alt text](<Screenshot (6).png>)
+![alt text](<Screenshot (7).png>)
+![alt text](<Screenshot (8).png>)
+![alt text](<Screenshot (9).png>)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
